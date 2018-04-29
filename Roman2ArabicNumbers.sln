@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman2ArabicNumbers", "Roman2ArabicNumbers\Roman2ArabicNumbers.csproj", "{23D6A80A-341D-41BB-BCF0-804CE27331C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman2ArabicNumbersTest", "Roman2ArabicNumbersTest\Roman2ArabicNumbersTest.csproj", "{481F24E8-B5D8-42DD-B64E-B905367E6378}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23D6A80A-341D-41BB-BCF0-804CE27331C3} = {23D6A80A-341D-41BB-BCF0-804CE27331C3}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

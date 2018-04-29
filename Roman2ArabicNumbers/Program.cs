@@ -4,27 +4,27 @@ using System.Collections.Generic;
 
 namespace Roman2ArabicNumbers
 {
-    class Program
+    public class Program
     {
         static Dictionary<string, int> RomanNumbersNormal = new Dictionary<string, int>()
         {
-            { "I", 1 },
-            { "V", 5 },
-            { "X", 10 },
-            { "L", 50 },
-            { "C", 100 },
+            { "M", 1000 },
             { "D", 500 },
-            { "M", 1000 }
+            { "C", 100 },
+            { "L", 50 },
+            { "X", 10 },
+            { "V", 5 },
+            { "I", 1 },
         }; // https://en.wikipedia.org/wiki/Roman_numerals
 
         static Dictionary<string, int> RomanNumbersSubtractive = new Dictionary<string, int>()
         {
-            { "IV", 4 },
-            { "IX", 9 },
-            { "XL", 40 },
-            { "XC", 90 },
+            { "CM", 900 },
             { "CD", 400 },
-            { "CM", 900 }
+            { "XC", 90 },
+            { "XL", 40 },
+            { "IX", 9 },
+            { "IV", 4 },
         };
 
         static void Main(string[] args)
@@ -36,7 +36,7 @@ namespace Roman2ArabicNumbers
             Console.ReadLine();
         }
 
-        static int RomanParser(string input)
+        public static int RomanParser(string input)
         {
             int result = 0;
             string inputCopy = input;
